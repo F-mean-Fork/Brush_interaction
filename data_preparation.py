@@ -38,7 +38,8 @@ ans = [0.01]
 for i in range(58, 0, -1):  # over a range of N2 values
     sigma = theta / (60 + (i // m - 1) * n) 
     ans.append(sigma)
-print(ans)
+ans.append(0.1)
+
     # with open('results.txt', 'a') as file1:
     #     file1.writelines(
     #         f'sigma = {sigma}, N1 = {60-i}, N2 = {i}, n = {n}, m = 1'+'\n')
